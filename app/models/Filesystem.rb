@@ -1,4 +1,4 @@
-class Database
+class Filesystem
   def initialize(file = 'database.json')
     @file = file
     @data = JSON.parse(File.read(@file))

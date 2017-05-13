@@ -24,7 +24,7 @@ class CiEvent
   private
 
   def detect_state!
-    states = Database.new
+    states = Filesystem.new
     @previous_state = states[@event_id] unless states[@event_id].nil?
     states[@event_id] = false if fail?
     states[@event_id] = true if success?

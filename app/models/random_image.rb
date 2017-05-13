@@ -8,6 +8,6 @@ class RandomImage
   end
 
   def self.random(type)
-    Database.new('images.json')[type].sample
+    Filesystem.new('images.json')[type].sample
   end
 end
