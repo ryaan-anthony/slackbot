@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   def api_operations
-    constraints(GitlabRouter) do
+    constraints(GocdEvent) do
       post '/build', to: 'ci#build'
       post '/deploy', to: 'ci#deploy'
     end
