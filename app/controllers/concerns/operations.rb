@@ -4,6 +4,6 @@ module Concerns::Operations
   protected
 
   def operation_success!
-    render json: {success: true}
+    render json: { success: true }
   end
 end

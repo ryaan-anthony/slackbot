@@ -1,6 +1,6 @@
 class Database
-  def initialize
-    @file = 'database.json'
+  def initialize(file = 'database.json')
+    @file = file
     @data = JSON.parse(File.read(@file))
   end
 
