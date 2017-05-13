@@ -2,7 +2,7 @@ module V1
   class CiController < ApplicationController
     include Concerns::Operations
 
-    SLACK_CHANNEL = '#sandbox'
+    SLACK_CHANNEL = '#devops'
 
     def build
       author = params.require(:author)
