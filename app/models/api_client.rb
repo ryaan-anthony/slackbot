@@ -6,9 +6,6 @@ class ApiClient
   end
 
   def post(operation, request)
-    Rails.logger.debug operation
-    Rails.logger.debug request
-    response = @connection.send('post', operation, request)
-    Rails.logger.debug response.body
+    @connection.send('post', operation, request)
   end
 end
