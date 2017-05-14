@@ -42,7 +42,7 @@ _______
 |---	|---	|---	|---	|---	|---	|
 | Header| X-CI-ID | Identifies the CI caller. | Yes	| String	| `dev04` |
 | Header| X-CI-Event | Describes the CI Event. Must contain "success" or "fail". | Yes	| String	| `Deploy-Fail` |
-| Body  	| environment  	|  The environment deployed to. 	|  Yes	|  String 	|  `Production` 	|
+| Body  	| environment  	|  The environment deployed to. 	|  Yes	|  String 	|  `Development` 	|
 | Body  	| commit  	|  The commit being deployed. 	|  Yes, but for successful deploys only | String  	|  `some string message` 	|
 
 Example:
