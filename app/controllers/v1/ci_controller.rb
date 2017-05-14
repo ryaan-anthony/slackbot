@@ -23,7 +23,7 @@ module V1
       if event.fail?
         message = '*Deployment failed, please check pipeline!*'
         Slack::SendMessage.call(SLACK_CHANNEL, title, message)
-      elsif event.success?
+      else
         commit = params.require(:commit)
         Slack::SendMessage.call(SLACK_CHANNEL, title, commit)
       end
